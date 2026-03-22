@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/log-ip.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/log-ip",
+            "dest": "api/log-ip.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "public/$1"
+        }
+    ]
+}

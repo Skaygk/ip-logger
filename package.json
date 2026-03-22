@@ -1,0 +1,14 @@
+{
+    "name": "ip-logger",
+    "version": "1.0.0",
+    "description": "Proyecto para registrar IPs en Supabase",
+    "main": "api/log-ip.js",
+    "scripts": {
+        "start": "vercel dev",
+        "init-supabase": "node scripts/init-supabase.js"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.0.0",
+        "dotenv": "^16.0.3"
+    }
+}
