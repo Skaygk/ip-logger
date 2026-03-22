@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Logger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>¡Bienvenido!</h1>
+        <p class="message">EZ</p>
+    </div>
+    <Script>
+        fetch('/api/log-ip')
+            .then(response => response.json())
+            .then(data => console.log('IP registrada:', data))
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+
+</html>
